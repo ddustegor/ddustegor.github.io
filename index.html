@@ -5,52 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dilek Dustegor - Academic Web Page</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <h1>Dilek Dustegor</h1>
-        <p>Assistant Professor of Computer Science</p>
-        <p>Email: d.dustegor@rug.nl</p>
+        <p>Associate Professor of Computer Science</p>
+        <p>Email: dilek.dustegor@example.com</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#teaching">Teaching</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" class="tab-link" onclick="openTab(event, 'about')">About Me</a></li>
+            <li><a href="#research" class="tab-link" onclick="openTab(event, 'research')">Research</a></li>
+            <li><a href="#publications" class="tab-link" onclick="openTab(event, 'publications')">Publications</a></li>
+            <li><a href="#teaching" class="tab-link" onclick="openTab(event, 'teaching')">Teaching</a></li>
+            <li><a href="#contact" class="tab-link" onclick="openTab(event, 'contact')">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="about">
+    <div id="about" class="tab-content">
         <h2>About Me</h2>
         <p>Brief biography or introduction.</p>
-    </section>
+    </div>
 
-    <section id="research">
+    <div id="research" class="tab-content" style="display:none;">
         <h2>Research Interests</h2>
         <p>Description of research interests.</p>
-    </section>
+    </div>
 
-    <section id="publications">
+    <div id="publications" class="tab-content" style="display:none;">
         <h2>Publications</h2>
         <ul>
             <li>Publication 1</li>
             <li>Publication 2</li>
             <li>Publication 3</li>
         </ul>
-    </section>
+    </div>
 
-    <section id="teaching">
+    <div id="teaching" class="tab-content" style="display:none;">
         <h2>Teaching</h2>
         <p>Courses taught and teaching philosophy.</p>
-    </section>
+    </div>
 
-    <section id="contact">
+    <div id="contact" class="tab-content" style="display:none;">
         <h2>Contact</h2>
         <p>Additional contact information or form.</p>
-    </section>
+    </div>
 
     <footer>
         <p>&copy; 2024 Dilek Dustegor</p>
