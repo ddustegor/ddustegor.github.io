@@ -1,25 +1,67 @@
-function openTab(evt, tabName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-
-    // Get all elements with class="tab-content" and hide them
-    tabcontent = document.getElementsByClassName("tab-content");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Get all elements with class="tab-link" and remove the class "active"
-    tablinks = document.getElementsByClassName("tab-link");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-// Set default open tab
-document.addEventListener("DOMContentLoaded", function() {
-    document.querySelector('.tab-link').click();
-});
+header {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+.container {
+    display: flex;
+}
+
+nav {
+    width: 200px;
+    background: #333;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background: #444;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #555;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.tabcontent.active {
+    display: block;
+}
