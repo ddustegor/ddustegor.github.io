@@ -29,8 +29,6 @@ nav {
     background: #333;
     padding: 20px;
     min-height: 100vh;
-    position: sticky;
-    top: 0;
 }
 
 nav ul {
@@ -47,11 +45,12 @@ nav ul li a {
     text-decoration: none;
     display: block;
     padding: 10px;
+    background: #444;
     border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background: #575757;
+    background: #555;
 }
 
 main {
@@ -59,29 +58,10 @@ main {
     padding: 20px;
 }
 
-main h2 {
-    margin-top: 0;
+.tabcontent {
+    display: none;
 }
 
-section {
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style-type: disc;
-    margin: 0;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+.tabcontent.active {
+    display: block;
 }
