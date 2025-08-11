@@ -65,6 +65,175 @@
         </section>
 
         <section id="research" class="tab-content">
+
+			<section class="projects">
+  <h1>Projects @ RUG</h1>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <input type="text" id="searchInput" placeholder="Search projects...">
+    <select id="roleFilter">
+      <option value="">All Roles</option>
+      <option value="Coordinator">Coordinator</option>
+      <option value="Principal Investigator">Principal Investigator</option>
+      <option value="CS Representative">CS Representative</option>
+      <option value="Lead Instructional Designer">Lead Instructional Designer</option>
+      <option value="Lead Solution Developer">Lead Solution Developer</option>
+    </select>
+    <select id="yearFilter">
+      <option value="">All Years</option>
+      <option value="2025">2025</option>
+      <option value="2024">2024</option>
+      <option value="2023">2023</option>
+    </select>
+    <select id="fundingFilter">
+      <option value="">All Funding Sources</option>
+      <option value="NWO">NWO</option>
+      <option value="EIT Digital">EIT Digital</option>
+      <option value="EIT Manufacturing">EIT Manufacturing</option>
+      <option value="RUG">RUG</option>
+      <option value="CLT">CLT</option>
+    </select>
+  </div>
+
+  <!-- EDUCATIONAL PROJECTS -->
+  <h2>📚 Educational Innovation & Leadership Projects</h2>
+
+  <div class="project-card" data-role="Principal Investigator" data-year="2024" data-funding="RUG">
+    <div class="project-header">
+      <h3>LLM for Formative & Summative Assessment</h3>
+      <img src="rug_logo.png" alt="RUG Logo" class="badge">
+    </div>
+    <p><strong>Role:</strong> Principal Investigator | <strong>Year:</strong> Since 2024</p>
+    <p><em>Piloting large language models to provide personalized feedback at scale in multiple FSE courses.</em></p>
+    <details>
+      <summary>Read more</summary>
+      <p><strong>Impact:</strong> Enhances motivation & metacognition; reduces workload; boosts program reputation.</p>
+    </details>
+  </div>
+
+  <div class="project-card" data-role="Coordinator, Acting Program Director" data-year="2024" data-funding="EIT Digital">
+    <div class="project-header">
+      <h3>EIT Digital Double Degree in Data Science</h3>
+      <img src="eit_logo.png" alt="EIT Logo" class="badge">
+    </div>
+    <p><strong>Role:</strong> Coordinator, Acting Program Director | <strong>Year:</strong> Since 2024</p>
+    <p><em>New MSc double degree in partnership with EIT Digital Master School (14 EU universities).</em></p>
+    <details>
+      <summary>Read more</summary>
+      <p><strong>Impact:</strong> Builds transversal skills; expands program capacity; strengthens EU network presence.</p>
+    </details>
+  </div>
+
+  <div class="project-card" data-role="CS Representative" data-year="2025" data-funding="CLT">
+    <div class="project-header">
+      <h3>Student Attendance Inquiry – “To Be or Not to Be… Present in a Lecture”</h3>
+      <img src="clt_logo.png" alt="CLT Logo" class="badge">
+    </div>
+    <p><strong>Role:</strong> CS Representative, PLC | <strong>Year:</strong> Since 2025</p>
+    <p><em>Systematic inquiry into low attendance at FSE via focus groups and data analysis.</em></p>
+    <details>
+      <summary>Read more</summary>
+      <p><strong>Impact:</strong> Improves engagement; optimizes resources; reinforces student–staff relationships.</p>
+    </details>
+  </div>
+
+  <div class="project-card" data-role="Lead Instructional Designer" data-year="2024" data-funding="EIT Manufacturing">
+    <div class="project-header">
+      <h3>ViDi – Data Science for Manufacturing</h3>
+      <img src="eit_logo.png" alt="EIT Logo" class="badge">
+    </div>
+    <p><strong>Role:</strong> Lead Instructional Designer (3 Courses) | <strong>Year:</strong> 2024–2025 | <strong>Funding:</strong> €388,516 (EIT Manufacturing)</p>
+    <p><em>Blended learning program enabling professionals to solve manufacturing problems with data science.</em></p>
+    <details>
+      <summary>Read more</summary>
+      <p><strong>Impact:</strong> Promotes lifelong learning; supports AI adoption; inspires new MSc course content at RUG.</p>
+      <a href="https://vidicourses.lt/" target="_blank">🔗 Project link</a>
+    </details>
+  </div>
+
+  <div class="project-card" data-role="Lead Solution Developer" data-year="2023" data-funding="EIT Manufacturing">
+    <div class="project-header">
+      <h3>AISME – AI Solutions in SMEs</h3>
+      <img src="eit_logo.png" alt="EIT Logo" class="badge">
+    </div>
+    <p><strong>Role:</strong> Lead Solution Developer (1 Course) | <strong>Year:</strong> 2023–2024 | <strong>Funding:</strong> €311,066 (EIT Manufacturing)</p>
+    <p><em>Workplace-integrated training for SME managers & engineers on adopting AI in manufacturing.</em></p>
+    <details>
+      <summary>Read more</summary>
+      <p><strong>Impact:</strong> Drives SME digital transformation; embeds real industry challenges into RUG curricula.</p>
+      <a href="https://web.gi.grenoble-inp.fr/aisme/learningpaths" target="_blank">🔗 Project link</a>
+    </details>
+  </div>
+
+  <!-- RESEARCH PROJECTS -->
+  <h2>🔬 Applied Research Projects</h2>
+
+  <div class="project-card" data-role="Coordinator, Acting PI" data-year="2024" data-funding="NWO">
+    <div class="project-header">
+      <h3>DDTClean – Distributed Digital Twin for Clean Water</h3>
+      <img src="nwo_logo.png" alt="NWO Logo" class="badge">
+    </div>
+    <p><strong>Role:</strong> Coordinator, Acting PI | <strong>Year:</strong> 2024–2028 | <strong>Funding:</strong> €700,000 (NWO Green Water Processes)</p>
+    <p><em>AI-enabled wastewater governance using electrochemical–membrane technologies & distributed digital twins.</em></p>
+    <details>
+      <summary>Read more</summary>
+      <p><strong>Impact:</strong> Improves water quality in remote areas; coordinates multiple stakeholders; advances applied AI for societal benefit.</p>
+      <a href="https://www.nwo.nl/en/projects/48222007" target="_blank">🔗 Project link</a>
+    </details>
+  </div>
+</section>
+
+<style>
+  .projects { font-family: Arial, sans-serif; padding: 20px; max-width: 1000px; margin: auto; }
+  .projects h1 { text-align: center; margin-bottom: 20px; }
+  .filter-bar { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 25px; justify-content: center; }
+  .filter-bar input, .filter-bar select { padding: 8px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px; }
+  h2 { margin-top: 40px; border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+  .project-card { border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 20px; background-color: #fafafa; transition: box-shadow 0.3s ease; }
+  .project-card:hover { box-shadow: 0px 4px 12px rgba(0,0,0,0.1); }
+  .project-header { display: flex; justify-content: space-between; align-items: center; }
+  .badge { max-height: 35px; }
+  details summary { cursor: pointer; color: #0056b3; font-weight: bold; margin-top: 10px; }
+  .project-card a { color: #0056b3; text-decoration: none; font-weight: bold; }
+  .project-card a:hover { text-decoration: underline; }
+  @media (max-width: 600px) { .filter-bar { flex-direction: column; } .badge { max-height: 25px; } }
+</style>
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const roleFilter = document.getElementById('roleFilter');
+  const yearFilter = document.getElementById('yearFilter');
+  const fundingFilter = document.getElementById('fundingFilter');
+  const cards = document.querySelectorAll('.project-card');
+
+  function filterProjects() {
+    const searchText = searchInput.value.toLowerCase();
+    const roleValue = roleFilter.value.toLowerCase();
+    const yearValue = yearFilter.value;
+    const fundingValue = fundingFilter.value.toLowerCase();
+
+    cards.forEach(card => {
+      const cardText = card.innerText.toLowerCase();
+      const cardRoles = card.dataset.role.toLowerCase().split(',').map(r => r.trim());
+      const cardYear = card.dataset.year;
+      const cardFunding = card.dataset.funding.toLowerCase();
+
+      const matchesSearch = cardText.includes(searchText) || cardFunding.includes(searchText);
+      const matchesRole = !roleValue || cardRoles.includes(roleValue);
+      const matchesYear = !yearValue || cardYear === yearValue;
+      const matchesFunding = !fundingValue || cardFunding === fundingValue;
+
+      card.style.display = (matchesSearch && matchesRole && matchesYear && matchesFunding) ? '' : 'none';
+    });
+  }
+
+  searchInput.addEventListener('input', filterProjects);
+  roleFilter.addEventListener('change', filterProjects);
+  yearFilter.addEventListener('change', filterProjects);
+  fundingFilter.addEventListener('change', filterProjects);
+</script>
+			
             <h1>Projects @ RUG</h1>
 		<table>
   <thead>
