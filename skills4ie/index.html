@@ -3,398 +3,214 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Skills4IE’27 – Future-Proofing the Intelligent Environments Workforce</title>
-  <meta name="description" content="Skills4IE’27 is an IE’27 workshop on future professional competencies, learning in computing and engineering, and credible assessment in the age of generative AI.">
+  <title>Skills4IE’27</title>
+  <meta name="description" content="Skills4IE’27 — Future-Proofing the Intelligent Environments Workforce. Workshop at IE’27, Skopje, North Macedonia.">
   <style>
-    :root{
-      --ink:#202326;
-      --muted:#60666c;
-      --line:#d9dde1;
-      --paper:#ffffff;
-      --soft:#f6f7f8;
-      --accent:#1d6f82;
-      --accent-dark:#145567;
-      --max:1080px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
     body{
       margin:0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color:var(--ink);
-      background:var(--paper);
-      line-height:1.62;
-    }
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
-    header{
-      border-bottom:1px solid var(--line);
       background:#fff;
+      color:#222;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:16px;
+      line-height:1.6;
     }
-    .topbar{
-      min-height:68px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:24px;
+    .page{
+      max-width:920px;
+      margin:0 auto;
+      padding:36px 24px 64px;
     }
-    .brand{
-      font-weight:700;
-      color:var(--ink);
-      letter-spacing:.01em;
-    }
-    nav{display:flex;flex-wrap:wrap;gap:18px;font-size:.94rem}
-    nav a{color:#42474c}
-    .hero{padding:62px 0 34px}
-    .kicker{
-      font-size:.82rem;
-      font-weight:700;
-      letter-spacing:.13em;
-      text-transform:uppercase;
-      color:var(--accent);
-      margin-bottom:14px;
+    header{
+      margin-bottom:28px;
     }
     h1{
-      font-family: Georgia, "Times New Roman", serif;
-      font-size:clamp(2.4rem, 6vw, 4.7rem);
-      font-weight:500;
-      line-height:1.05;
-      margin:0;
-      max-width:950px;
-      letter-spacing:-.02em;
+      margin:0 0 4px;
+      font-size:2.35rem;
+      font-weight:600;
+      line-height:1.15;
     }
     .subtitle{
-      margin:20px 0 0;
-      font-size:clamp(1.1rem,2.2vw,1.45rem);
-      color:var(--muted);
-      max-width:850px;
+      margin:0 0 14px;
+      font-size:1.15rem;
+      color:#444;
     }
-    .event-meta{
-      margin-top:28px;
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px 22px;
+    .meta{
+      margin:0;
+      color:#555;
       font-size:.95rem;
-      color:#44494e;
     }
-    .event-meta strong{font-weight:650}
-    .photo{
-      margin:34px 0 0;
-      border-top:1px solid var(--line);
-      border-bottom:1px solid var(--line);
-      background:#eee;
+    .hero{
+      margin:28px 0 6px;
     }
-    .photo img{
-      display:block;
+    .hero img{
       width:100%;
-      height:min(430px,48vw);
-      object-fit:cover;
-      object-position:center 46%;
+      height:auto;
+      display:block;
     }
     .caption{
-      max-width:var(--max);
-      margin:0 auto;
-      padding:8px 24px 11px;
-      font-size:.78rem;
-      color:#747a80;
-      background:#fff;
-    }
-    main{padding:18px 0 64px}
-    section{
-      padding:50px 0;
-      border-bottom:1px solid var(--line);
-    }
-    section:last-child{border-bottom:0}
-    .section-grid{
-      display:grid;
-      grid-template-columns:220px 1fr;
-      gap:42px;
-      align-items:start;
+      margin:5px 0 28px;
+      color:#777;
+      font-size:.8rem;
     }
     h2{
-      margin:0;
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:1.7rem;
-      font-weight:500;
+      margin:34px 0 12px;
+      font-size:1.55rem;
+      font-weight:600;
+      border-bottom:1px solid #ddd;
+      padding-bottom:5px;
     }
     h3{
-      margin:26px 0 8px;
-      font-size:1.05rem;
-      line-height:1.35;
+      margin:22px 0 7px;
+      font-size:1.08rem;
     }
-    p{margin:0 0 15px}
-    ul{margin:10px 0 0;padding-left:20px}
-    li{margin:6px 0}
-    .lead{
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:1.32rem;
-      line-height:1.55;
-      color:#34383c;
+    p{margin:0 0 14px}
+    ul{margin:8px 0 14px;padding-left:22px}
+    li{margin:4px 0}
+    a{color:#155b7a}
+    .dates{
+      border-collapse:collapse;
+      width:100%;
+      max-width:620px;
     }
-    .question{
-      margin:28px 0 0;
-      padding:22px 24px;
-      border-left:3px solid var(--accent);
-      background:var(--soft);
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:1.18rem;
+    .dates td{
+      border-bottom:1px solid #e5e5e5;
+      padding:8px 6px 8px 0;
+      vertical-align:top;
     }
-    .triad{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:16px;
-      margin:24px 0 0;
+    .dates td:last-child{
+      text-align:right;
+      white-space:nowrap;
+      font-weight:600;
     }
-    .triad article{
-      border-top:3px solid var(--accent);
-      padding:17px 16px 12px 0;
+    .people{
+      list-style:none;
+      padding:0;
     }
-    .triad strong{
-      display:block;
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:1.18rem;
-      font-weight:500;
-      margin-bottom:4px;
-    }
-    .triad span{color:var(--muted);font-size:.94rem}
-    .date-list{
-      display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:0 28px;
-      border-top:1px solid var(--line);
-      margin-top:8px;
-    }
-    .date-row{
-      display:flex;
-      justify-content:space-between;
-      gap:24px;
-      padding:12px 0;
-      border-bottom:1px solid var(--line);
-    }
-    .date-row span:first-child{color:var(--muted)}
-    .date-row strong{white-space:nowrap}
-    .note{
-      margin-top:18px;
-      font-size:.92rem;
-      color:var(--muted);
-    }
-    .callout{
-      border:1px solid var(--line);
-      padding:22px 24px;
-      background:var(--soft);
-      margin:22px 0;
-    }
-    .callout strong{display:block;margin-bottom:5px}
-    .organisers{
-      display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:18px 34px;
-    }
-    .person{
-      padding-bottom:14px;
-      border-bottom:1px solid var(--line);
-    }
-    .person strong{display:block}
-    .person span{font-size:.92rem;color:var(--muted)}
-    .links{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px 18px;
-      margin-top:16px;
-    }
+    .people li{margin:8px 0}
     footer{
-      border-top:1px solid var(--line);
-      padding:28px 0 46px;
-      color:#777d83;
-      font-size:.84rem;
+      margin-top:42px;
+      padding-top:18px;
+      border-top:1px solid #ddd;
+      color:#777;
+      font-size:.85rem;
     }
-    @media (max-width:760px){
-      .topbar{align-items:flex-start;flex-direction:column;padding:16px 0}
-      nav{gap:10px 14px}
-      .hero{padding-top:42px}
-      .section-grid{grid-template-columns:1fr;gap:16px}
-      .triad{grid-template-columns:1fr}
-      .date-list{grid-template-columns:1fr}
-      .organisers{grid-template-columns:1fr}
-      .photo img{height:260px}
+    @media (max-width:600px){
+      .page{padding:24px 18px 48px}
+      h1{font-size:1.9rem}
+      .dates td:last-child{white-space:normal;padding-left:10px}
     }
   </style>
 </head>
 <body>
-<header>
-  <div class="wrap topbar">
-    <a class="brand" href="https://ddustegor.github.io/">Dilek Düştegör</a>
-    <nav aria-label="Workshop navigation">
-      <a href="#scope">Scope</a>
-      <a href="#topics">Topics</a>
-      <a href="#submissions">Submissions</a>
-      <a href="#dates">Dates</a>
-      <a href="#organisation">Organisation</a>
-    </nav>
+<div class="page">
+
+  <header>
+    <h1>Skills4IE’27</h1>
+    <p class="subtitle"><strong>Future-Proofing the Intelligent Environments Workforce</strong><br>
+    Skills, learning and credible assessment in the age of generative AI</p>
+    <p class="meta">
+      Workshop at the 23rd International Conference on Intelligent Environments (IE’27)<br>
+      21–24 June 2027 · Skopje, North Macedonia · Hybrid
+    </p>
+  </header>
+
+  <div class="hero">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/04_Skopje.jpg"
+         alt="The old Stone Bridge in Skopje">
   </div>
-</header>
+  <p class="caption">
+    The old Stone Bridge in Skopje. Photo: Делфина, Wikimedia Commons,
+    <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>.
+  </p>
 
-<div class="hero wrap">
-  <div class="kicker">IE’27 Workshop · Skopje · Hybrid</div>
-  <h1>Skills4IE’27</h1>
-  <p class="subtitle"><strong>Future-Proofing the Intelligent Environments Workforce</strong><br>
-  Skills, learning and credible assessment in the age of generative AI.</p>
-  <div class="event-meta">
-    <span><strong>Conference:</strong> 21–24 June 2027</span>
-    <span><strong>Location:</strong> Skopje, North Macedonia</span>
-    <span><strong>Format:</strong> Hybrid</span>
-  </div>
+  <h2>Scope</h2>
+
+  <p>Artificial intelligence, cyber-physical systems, IoT, edge computing and digital twins are changing both Intelligent Environments and the work of the people who design, build and operate them. At the same time, generative AI is changing how students learn, solve problems and demonstrate expertise.</p>
+
+  <p>Skills4IE’27 brings together researchers, educators and industry practitioners to discuss three closely connected questions:</p>
+
+  <ul>
+    <li><strong>Skills:</strong> What technical and transversal competencies will future Intelligent Environments professionals need?</li>
+    <li><strong>Learning:</strong> How should computing and engineering education develop those competencies?</li>
+    <li><strong>Assessment:</strong> How can we obtain credible evidence of competence when powerful AI assistance is readily available?</li>
+  </ul>
+
+  <p>The workshop is particularly interested in systems reasoning, problem formulation, human–AI collaboration, critical evaluation, verification, transfer of knowledge, responsible decision-making and the relationship between professional practice and education.</p>
+
+  <h2>Main topics</h2>
+
+  <p>Topics of interest include, but are not limited to:</p>
+
+  <ul>
+    <li>Future technical and transversal competencies for Intelligent Environments</li>
+    <li>Systems thinking, problem formulation and architectural reasoning</li>
+    <li>Human–AI collaboration in professional and educational practice</li>
+    <li>Critical evaluation and verification of AI-generated outputs</li>
+    <li>Responsible and trustworthy use of AI</li>
+    <li>Curriculum redesign in computing and engineering</li>
+    <li>Authentic, project-based, challenge-based and problem-based learning</li>
+    <li>Intelligent learning environments, simulations, laboratories and digital twins for learning</li>
+    <li>Assessment of reasoning, transfer, design judgement and decision-making</li>
+    <li>Assessment with and without AI</li>
+    <li>Oral, interactive, practical and process-based assessment</li>
+    <li>Academic integrity in the age of generative AI</li>
+    <li>Industry perspectives on changing professional roles and workforce needs</li>
+    <li>Programme-level and institutional educational transformation</li>
+  </ul>
+
+  <h2>Submissions</h2>
+
+  <p>We welcome both mature research and shorter contributions that can stimulate discussion and help build a shared agenda for education and workforce development in Intelligent Environments.</p>
+
+  <h3>Full papers</h3>
+  <p>For mature research contributions, empirical studies, substantial educational designs, frameworks or evaluations.</p>
+
+  <h3>Short papers</h3>
+  <p>For emerging work, experience reports, industry perspectives, position papers and concise case studies.</p>
+
+  <h3>Review and publication</h3>
+  <p>Accepted papers intended for publication must receive at least two peer reviews. According to IE’27, accepted workshop papers will be published in the IOS Press <em>Ambient Intelligence and Smart Environments</em> series and made available electronically through the ACM Digital Library, subject to the final publication arrangements of the conference.</p>
+
+  <p>At least one author of each accepted paper must register for IE’27 at the standard registration rate and present the paper. The exact Skills4IE paper format, page limits and submission link will be announced once the workshop submission setup is finalised.</p>
+
+  <p>
+    <a href="https://ie2027.mk/call-for-workshop/" target="_blank" rel="noopener">IE’27 call for workshops</a> ·
+    <a href="https://ie2027.mk/workshops/" target="_blank" rel="noopener">Official Skills4IE listing</a>
+  </p>
+
+  <h2>Workshop format</h2>
+
+  <p>The workshop will combine paper presentations with structured discussion. Rather than treating presentations as isolated contributions, the programme will connect them around three questions: what should future professionals be able to do, how should those capabilities be developed, and what counts as convincing evidence that they have been developed?</p>
+
+  <p>IE’27 schedules workshops during the first two days of the conference. The exact Skills4IE’27 date and time will be announced when the conference programme is finalised.</p>
+
+  <h2>Important dates</h2>
+
+  <table class="dates">
+    <tr><td>Workshop paper submission</td><td>2 March 2027</td></tr>
+    <tr><td>Acceptance notification</td><td>26 March 2027</td></tr>
+    <tr><td>Camera-ready submission</td><td>2 April 2027</td></tr>
+    <tr><td>IE’27 conference</td><td>21–24 June 2027</td></tr>
+  </table>
+
+  <h2>Organisation</h2>
+
+  <ul class="people">
+    <li><strong>Dilek Düştegör</strong> — University of Groningen, The Netherlands</li>
+    <li><strong>Andrés Muñoz Ortega</strong> — Universidad de Cádiz (UCA), Spain</li>
+    <li><strong>Edith Koh</strong> — University of Groningen, The Netherlands</li>
+    <li><strong>Matthias König</strong> — University of Southern Denmark, Denmark</li>
+  </ul>
+
+  <h2>About IE’27</h2>
+
+  <p>Skills4IE’27 is organised in conjunction with the 23rd International Conference on Intelligent Environments (IE’27), held in Skopje, North Macedonia, 21–24 June 2027.</p>
+
+  <p><a href="https://ie2027.mk/" target="_blank" rel="noopener">IE’27 conference website</a></p>
+
+  <footer>
+    Skills4IE’27 · Future-Proofing the Intelligent Environments Workforce
+  </footer>
+
 </div>
-
-<div class="photo">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Vardar_Stone_Bridge_Skopje.jpg" alt="Stone Bridge over the Vardar River in Skopje">
-</div>
-<div class="caption">Stone Bridge over the Vardar River, Skopje. Public-domain photograph via Wikimedia Commons.</div>
-
-<main class="wrap">
-  <section id="scope">
-    <div class="section-grid">
-      <h2>Scope</h2>
-      <div>
-        <p class="lead">What should future Intelligent Environments professionals be able to do when AI can already explain, generate, code, analyse and assist with increasingly sophisticated technical work?</p>
-        <p>Advances in artificial intelligence, cyber-physical systems, IoT, edge computing and digital twins are transforming intelligent environments and the skills needed to develop them. At the same time, AI is changing how future professionals learn, work and demonstrate expertise.</p>
-        <p>Skills4IE’27 connects three perspectives: the technical and transversal competencies required by future professionals; approaches to learning in computing and engineering education; and credible assessment in the age of generative AI. It brings together researchers, educators and industry practitioners to examine systems reasoning, human–AI collaboration, critical evaluation, verification and responsible decision-making, and to identify practical directions for curricula, learning and assessment.</p>
-
-        <div class="triad">
-          <article><strong>Skills</strong><span>What expertise and judgement will future professionals need?</span></article>
-          <article><strong>Learning</strong><span>What educational experiences can develop those capabilities?</span></article>
-          <article><strong>Assessment</strong><span>What evidence can credibly demonstrate competence?</span></article>
-        </div>
-
-        <div class="question">The workshop is built around alignment: what we want graduates to be able to do, how we help them learn it, and how we know they can actually do it.</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="topics">
-    <div class="section-grid">
-      <h2>Main topics</h2>
-      <div>
-        <p>We welcome contributions related to the future workforce for Intelligent Environments, including but not limited to:</p>
-        <ul>
-          <li>Future technical and transversal competencies for Intelligent Environments</li>
-          <li>Systems thinking, problem formulation and architectural reasoning</li>
-          <li>Human–AI collaboration in professional and educational practice</li>
-          <li>Critical evaluation, verification and responsible use of AI-generated outputs</li>
-          <li>Curriculum redesign in computing and engineering</li>
-          <li>Authentic, challenge-based, project-based and problem-based learning</li>
-          <li>Intelligent learning environments, simulations, laboratories and digital twins for learning</li>
-          <li>Assessment of reasoning, transfer, design judgement and decision-making</li>
-          <li>Assessment with and without AI</li>
-          <li>Process-based, oral, interactive and performance-based assessment</li>
-          <li>Academic integrity beyond simple AI detection</li>
-          <li>Industry perspectives on changing professional roles and workforce needs</li>
-          <li>Programme-level and institutional educational transformation</li>
-          <li>Empirical studies, experience reports and lessons from successful or unsuccessful interventions</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="submissions">
-    <div class="section-grid">
-      <h2>Submissions</h2>
-      <div>
-        <p>Skills4IE’27 welcomes both mature research and focused contributions that stimulate discussion and help build a shared agenda for education and workforce development in Intelligent Environments.</p>
-
-        <h3>Full papers</h3>
-        <p>For mature research contributions, empirical studies, substantial educational designs, frameworks or evaluations.</p>
-
-        <h3>Short papers</h3>
-        <p>For emerging research, work in progress, experience reports, industry perspectives, position papers and concise case studies.</p>
-
-        <div class="callout">
-          <strong>Peer review and publication</strong>
-          Accepted papers intended for publication must be peer reviewed by at least two reviewers. IE’27 states that accepted workshop papers will be published in the IOS Press <em>Ambient Intelligence and Smart Environments</em> book series and electronically through the ACM Digital Library. Publication remains subject to the final conference publication arrangements.
-        </div>
-
-        <p>At least one author of each accepted paper must register for IE’27 at the standard registration rate and present the paper. IE’27 is hybrid; in-person attendance is preferred, while online participation may also be considered.</p>
-
-        <p>The exact Skills4IE paper format, page limits and submission link will be posted here once the workshop submission setup is finalised.</p>
-
-        <div class="links">
-          <a href="https://ie2027.mk/call-for-workshop/" target="_blank" rel="noopener">IE’27 workshop call ↗</a>
-          <a href="https://ie2027.mk/workshops/" target="_blank" rel="noopener">Official Skills4IE listing ↗</a>
-          <a href="https://ie2027.mk/" target="_blank" rel="noopener">IE’27 conference website ↗</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="format">
-    <div class="section-grid">
-      <h2>Workshop format</h2>
-      <div>
-        <p>Skills4IE’27 is designed as an interactive research workshop rather than a sequence of isolated presentations. The programme will combine selected paper presentations with structured discussion and collaborative activities.</p>
-        <p>We plan to use the contributions to connect three questions:</p>
-        <ul>
-          <li>What should we teach?</li>
-          <li>How should students learn it?</li>
-          <li>What evidence would convince us that they can actually do it?</li>
-        </ul>
-        <p>IE’27 schedules workshops in parallel during the first two days of the conference. A half-day format is suggested by the conference, with the possibility of a full day depending on interest and programme constraints. The final Skills4IE’27 schedule will be announced later.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="dates">
-    <div class="section-grid">
-      <h2>Important dates</h2>
-      <div>
-        <div class="date-list">
-          <div class="date-row"><span>Workshop paper submission</span><strong>2 March 2027</strong></div>
-          <div class="date-row"><span>Acceptance notification</span><strong>26 March 2027</strong></div>
-          <div class="date-row"><span>Camera-ready submission</span><strong>2 April 2027</strong></div>
-          <div class="date-row"><span>IE’27 conference</span><strong>21–24 June 2027</strong></div>
-        </div>
-        <p class="note">The exact date and time of the Skills4IE’27 workshop within the conference programme are still to be announced.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="organisation">
-    <div class="section-grid">
-      <h2>Organisation</h2>
-      <div class="organisers">
-        <div class="person">
-          <strong>Dilek Düştegör</strong>
-          <span>University of Groningen, The Netherlands</span>
-        </div>
-        <div class="person">
-          <strong>Andrés Muñoz Ortega</strong>
-          <span>Universidad de Cádiz (UCA), Spain</span>
-        </div>
-        <div class="person">
-          <strong>Edith Koh</strong>
-          <span>University of Groningen, The Netherlands</span>
-        </div>
-        <div class="person">
-          <strong>Matthias König</strong>
-          <span>University of Southern Denmark, Denmark</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="section-grid">
-      <h2>About IE’27</h2>
-      <div>
-        <p>Skills4IE’27 is organised in conjunction with the 23rd International Conference on Intelligent Environments (IE’27), hosted in Skopje, North Macedonia, 21–24 June 2027.</p>
-        <p><a href="https://ie2027.mk/" target="_blank" rel="noopener">Visit the IE’27 website ↗</a></p>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap">Skills4IE’27 · Future-Proofing the Intelligent Environments Workforce</div>
-</footer>
 </body>
 </html>
